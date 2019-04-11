@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_07_183224) do
+ActiveRecord::Schema.define(version: 2019_04_11_031130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,8 +30,7 @@ ActiveRecord::Schema.define(version: 2019_04_07_183224) do
   create_table "aulas", force: :cascade do |t|
     t.string "disciplina"
     t.date "data"
-    t.text "objetivo"
-    t.text "realizado"
+    t.string "objetivoRealizado"
     t.string "trabalho"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -40,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_04_07_183224) do
   create_table "cursos", force: :cascade do |t|
     t.string "nome"
     t.string "disciplina"
+    t.string "matricula"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -50,6 +50,16 @@ ActiveRecord::Schema.define(version: 2019_04_07_183224) do
     t.integer "notasTrabalho"
     t.integer "notasProvaLivro"
     t.string "atividades"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "professores", force: :cascade do |t|
+    t.string "nome"
+    t.string "email"
+    t.text "endereco"
+    t.integer "telefone"
+    t.string "documento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

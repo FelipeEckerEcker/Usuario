@@ -2,14 +2,12 @@
 
 one:
   disciplina: MyString
-  data: 2019-04-07
-  objetivo: MyText
-  realizado: MyText
+  data: 2019-04-11
+  objetivoRealizado: MyString
   trabalho: MyString
 
 two:
   disciplina: MyString
-  data: 2019-04-07
-  objetivo: MyText
-  realizado: MyText
+  data: 2019-04-11
+  objetivoRealizado: MyString
   trabalho: MyString

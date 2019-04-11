@@ -15,6 +15,7 @@ class CursosTest < ApplicationSystemTestCase
     click_on "New Curso"
 
     fill_in "Disciplina", with: @curso.disciplina
+    fill_in "Matricula", with: @curso.matricula
     fill_in "Nome", with: @curso.nome
     click_on "Create Curso"
 
@@ -27,6 +28,7 @@ class CursosTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Disciplina", with: @curso.disciplina
+    fill_in "Matricula", with: @curso.matricula
     fill_in "Nome", with: @curso.nome
     click_on "Update Curso"
 

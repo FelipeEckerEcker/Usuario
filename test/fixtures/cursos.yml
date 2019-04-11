@@ -3,7 +3,9 @@
 one:
   nome: MyString
   disciplina: MyString
+  matricula: MyString
 
 two:
   nome: MyString
   disciplina: MyString
+  matricula: MyString
