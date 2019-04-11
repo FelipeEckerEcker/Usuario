@@ -3,6 +3,7 @@ class CreateCursos < ActiveRecord::Migration[5.2]
     create_table :cursos do |t|
       t.string :nome
       t.string :disciplina
+      t.string :matricula
 
       t.timestamps
     end

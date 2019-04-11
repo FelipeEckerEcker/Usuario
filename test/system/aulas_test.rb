@@ -16,8 +16,7 @@ class AulasTest < ApplicationSystemTestCase
 
     fill_in "Data", with: @aula.data
     fill_in "Disciplina", with: @aula.disciplina
-    fill_in "Objetivo", with: @aula.objetivo
-    fill_in "Realizado", with: @aula.realizado
+    fill_in "Objetivorealizado", with: @aula.objetivoRealizado
     fill_in "Trabalho", with: @aula.trabalho
     click_on "Create Aula"
 
@@ -31,8 +30,7 @@ class AulasTest < ApplicationSystemTestCase
 
     fill_in "Data", with: @aula.data
     fill_in "Disciplina", with: @aula.disciplina
-    fill_in "Objetivo", with: @aula.objetivo
-    fill_in "Realizado", with: @aula.realizado
+    fill_in "Objetivorealizado", with: @aula.objetivoRealizado
     fill_in "Trabalho", with: @aula.trabalho
     click_on "Update Aula"
 

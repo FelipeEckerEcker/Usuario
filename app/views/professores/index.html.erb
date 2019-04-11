@@ -6,9 +6,16 @@
   <thead>
     <tr>
       <th>Nome</th>
+<<<<<<< HEAD
       <th>Telefone</th>
       <th>Email</th>
       <th>Endereco</th>
+=======
+      <th>Email</th>
+      <th>Endereco</th>
+      <th>Telefone</th>
+      <th>Documento</th>
+>>>>>>> d99b35d016db3527669868ae5897ce7e3a71e111
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,9 +24,16 @@
     <% @professores.each do |professor| %>
       <tr>
         <td><%= professor.nome %></td>
+<<<<<<< HEAD
         <td><%= professor.telefone %></td>
         <td><%= professor.email %></td>
         <td><%= professor.endereco %></td>
+=======
+        <td><%= professor.email %></td>
+        <td><%= professor.endereco %></td>
+        <td><%= professor.telefone %></td>
+        <td><%= professor.documento %></td>
+>>>>>>> d99b35d016db3527669868ae5897ce7e3a71e111
         <td><%= link_to 'Show', professor %></td>
         <td><%= link_to 'Edit', edit_professor_path(professor) %></td>
         <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Are you sure?' } %></td>

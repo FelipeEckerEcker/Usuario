@@ -14,6 +14,10 @@ class ProfessoresTest < ApplicationSystemTestCase
     visit professores_url
     click_on "New Professor"
 
+<<<<<<< HEAD
+=======
+    fill_in "Documento", with: @professor.documento
+>>>>>>> d99b35d016db3527669868ae5897ce7e3a71e111
     fill_in "Email", with: @professor.email
     fill_in "Endereco", with: @professor.endereco
     fill_in "Nome", with: @professor.nome
@@ -28,6 +32,10 @@ class ProfessoresTest < ApplicationSystemTestCase
     visit professores_url
     click_on "Edit", match: :first
 
+<<<<<<< HEAD
+=======
+    fill_in "Documento", with: @professor.documento
+>>>>>>> d99b35d016db3527669868ae5897ce7e3a71e111
     fill_in "Email", with: @professor.email
     fill_in "Endereco", with: @professor.endereco
     fill_in "Nome", with: @professor.nome
