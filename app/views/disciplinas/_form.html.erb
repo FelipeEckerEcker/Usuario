@@ -1,0 +1,42 @@
+<%= form_with(model: disciplina, local: true) do |form| %>
+  <% if disciplina.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(disciplina.errors.count, "error") %> prohibited this disciplina from being saved:</h2>
+
+      <ul>
+      <% disciplina.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :notaAluno %>
+    <%= form.number_field :notaAluno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presencaAula %>
+    <%= form.text_field :presencaAula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notaTrabalho %>
+    <%= form.number_field :notaTrabalho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notaProvaLivro %>
+    <%= form.number_field :notaProvaLivro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atividadesExtra %>
+    <%= form.text_field :atividadesExtra %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

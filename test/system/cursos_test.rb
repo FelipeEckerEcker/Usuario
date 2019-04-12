@@ -14,9 +14,7 @@ class CursosTest < ApplicationSystemTestCase
     visit cursos_url
     click_on "New Curso"
 
-    fill_in "Disciplina", with: @curso.disciplina
-    fill_in "Matricula", with: @curso.matricula
-    fill_in "Nome", with: @curso.nome
+    fill_in "Nome", with: @curso.Nome
     click_on "Create Curso"
 
     assert_text "Curso was successfully created"
@@ -27,9 +25,7 @@ class CursosTest < ApplicationSystemTestCase
     visit cursos_url
     click_on "Edit", match: :first
 
-    fill_in "Disciplina", with: @curso.disciplina
-    fill_in "Matricula", with: @curso.matricula
-    fill_in "Nome", with: @curso.nome
+    fill_in "Nome", with: @curso.Nome
     click_on "Update Curso"
 
     assert_text "Curso was successfully updated"

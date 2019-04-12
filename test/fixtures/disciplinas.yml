@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  notaAluno: 1
+  presencaAula: MyString
+  notaTrabalho: 1
+  notaProvaLivro: 1
+  atividadesExtra: MyString
+
+two:
+  notaAluno: 1
+  presencaAula: MyString
+  notaTrabalho: 1
+  notaProvaLivro: 1
+  atividadesExtra: MyString

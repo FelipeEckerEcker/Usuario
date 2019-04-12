@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_04_11_031130) do
-=======
-ActiveRecord::Schema.define(version: 2019_04_07_220156) do
->>>>>>> 8f90bb9da4f02f20b4544315713b8449c3f7c581
+ActiveRecord::Schema.define(version: 2019_04_12_010656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,66 +28,51 @@ ActiveRecord::Schema.define(version: 2019_04_07_220156) do
   end
 
   create_table "aulas", force: :cascade do |t|
-    t.string "disciplina"
-    t.date "data"
-    t.string "objetivoRealizado"
-    t.string "trabalho"
+    t.string "Disciplina"
+    t.date "Data"
+    t.string "Objetivo"
+    t.string "Realizado"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "cursos", force: :cascade do |t|
-    t.string "nome"
-    t.string "disciplina"
-    t.string "matricula"
+    t.string "Nome"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "disciplinas", force: :cascade do |t|
-    t.integer "nota"
-    t.string "presenca"
-    t.integer "notasTrabalho"
-    t.integer "notasProvaLivro"
-    t.string "atividades"
+  create_table "presenca_aulas", force: :cascade do |t|
+    t.string "nome"
+    t.date "data"
+    t.integer "numero_faltas"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "professores", force: :cascade do |t|
     t.string "nome"
-<<<<<<< HEAD
     t.string "email"
     t.text "endereco"
     t.integer "telefone"
     t.string "documento"
-=======
-    t.string "telefone"
-    t.string "email"
-    t.string "endereco"
->>>>>>> 8f90bb9da4f02f20b4544315713b8449c3f7c581
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "professors", force: :cascade do |t|
-    t.string "nome"
-    t.string "email"
-    t.string "documento"
-    t.text "endereco"
-    t.integer "telefone"
+  create_table "provas", force: :cascade do |t|
+    t.string "disciplina"
+    t.integer "nota_aluno"
+    t.string "curso"
+    t.date "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "nome"
-    t.string "email"
-    t.text "endereco"
-    t.string "pai"
-    t.string "mae"
-    t.string "documento"
-    t.integer "telefone"
+  create_table "trabalhos", force: :cascade do |t|
+    t.string "Disciplina"
+    t.date "dataEntrega"
+    t.text "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

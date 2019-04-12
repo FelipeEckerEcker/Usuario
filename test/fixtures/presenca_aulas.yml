@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  data: 2019-04-11
+  numero_faltas: 1
+
+two:
+  nome: MyString
+  data: 2019-04-11
+  numero_faltas: 1

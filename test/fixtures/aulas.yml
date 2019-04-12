@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  disciplina: MyString
-  data: 2019-04-11
-  objetivoRealizado: MyString
-  trabalho: MyString
+  Disciplina: MyString
+  Data: 2019-04-11
+  Objetivo: MyString
+  Realizado: MyString
 
 two:
-  disciplina: MyString
-  data: 2019-04-11
-  objetivoRealizado: MyString
-  trabalho: MyString
+  Disciplina: MyString
+  Data: 2019-04-11
+  Objetivo: MyString
+  Realizado: MyString

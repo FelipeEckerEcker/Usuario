@@ -1,0 +1,32 @@
+<%= form_with(model: presenca_aula, local: true) do |form| %>
+  <% if presenca_aula.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(presenca_aula.errors.count, "error") %> prohibited this presenca_aula from being saved:</h2>
+
+      <ul>
+      <% presenca_aula.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_faltas %>
+    <%= form.number_field :numero_faltas %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

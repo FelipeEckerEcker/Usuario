@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trabalhos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Disciplina</th>
+      <th>Dataentrega</th>
+      <th>Descricao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trabalhos.each do |trabalho| %>
+      <tr>
+        <td><%= trabalho.Disciplina %></td>
+        <td><%= trabalho.dataEntrega %></td>
+        <td><%= trabalho.descricao %></td>
+        <td><%= link_to 'Show', trabalho %></td>
+        <td><%= link_to 'Edit', edit_trabalho_path(trabalho) %></td>
+        <td><%= link_to 'Destroy', trabalho, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trabalho', new_trabalho_path %>

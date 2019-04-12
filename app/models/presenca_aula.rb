@@ -1,0 +1,2 @@
+class PresencaAula < ApplicationRecord
+end

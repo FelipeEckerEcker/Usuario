@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Presenca Aulas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data</th>
+      <th>Numero faltas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @presenca_aulas.each do |presenca_aula| %>
+      <tr>
+        <td><%= presenca_aula.nome %></td>
+        <td><%= presenca_aula.data %></td>
+        <td><%= presenca_aula.numero_faltas %></td>
+        <td><%= link_to 'Show', presenca_aula %></td>
+        <td><%= link_to 'Edit', edit_presenca_aula_path(presenca_aula) %></td>
+        <td><%= link_to 'Destroy', presenca_aula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Presenca Aula', new_presenca_aula_path %>

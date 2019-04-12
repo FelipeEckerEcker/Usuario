@@ -1,0 +1,32 @@
+<%= form_with(model: trabalho, local: true) do |form| %>
+  <% if trabalho.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trabalho.errors.count, "error") %> prohibited this trabalho from being saved:</h2>
+
+      <ul>
+      <% trabalho.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Disciplina %>
+    <%= form.text_field :Disciplina %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataEntrega %>
+    <%= form.date_select :dataEntrega %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
