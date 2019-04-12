@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @notas_trabalho.nome %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @notas_trabalho.data %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @notas_trabalho.curso %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @notas_trabalho.disciplina %>
+</p>
+
+<p>
+  <strong>Nota aluno:</strong>
+  <%= @notas_trabalho.nota_aluno %>
+</p>
+
+<%= link_to 'Edit', edit_notas_trabalho_path(@notas_trabalho) %> |
+<%= link_to 'Back', notas_trabalhos_path %>

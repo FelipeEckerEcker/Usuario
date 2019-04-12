@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  data: 2019-04-12
+  curso: MyString
+  nota_aluno: 1
+
+two:
+  nome: MyString
+  data: 2019-04-12
+  curso: MyString
+  nota_aluno: 1

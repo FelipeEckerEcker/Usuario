@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nota Prova Livros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Data</th>
+      <th>Curso</th>
+      <th>Nota aluno</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nota_prova_livros.each do |nota_prova_livro| %>
+      <tr>
+        <td><%= nota_prova_livro.nome %></td>
+        <td><%= nota_prova_livro.data %></td>
+        <td><%= nota_prova_livro.curso %></td>
+        <td><%= nota_prova_livro.nota_aluno %></td>
+        <td><%= link_to 'Show', nota_prova_livro %></td>
+        <td><%= link_to 'Edit', edit_nota_prova_livro_path(nota_prova_livro) %></td>
+        <td><%= link_to 'Destroy', nota_prova_livro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nota Prova Livro', new_nota_prova_livro_path %>

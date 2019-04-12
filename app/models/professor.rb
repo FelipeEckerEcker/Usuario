@@ -1,4 +1,4 @@
 class Professor < ApplicationRecord
-    validates :nome, ;email, :telefone, presence:true
+    validates :nome, :email, :endereco, :documento, :telefone, presence:true
 
 end

@@ -1,0 +1,2 @@
+class NotasTrabalho < ApplicationRecord
+end

@@ -14,9 +14,9 @@ class TrabalhosTest < ApplicationSystemTestCase
     visit trabalhos_url
     click_on "New Trabalho"
 
-    fill_in "Disciplina", with: @trabalho.Disciplina
-    fill_in "Dataentrega", with: @trabalho.dataEntrega
+    fill_in "Data de entrega", with: @trabalho.data_de_entrega
     fill_in "Descricao", with: @trabalho.descricao
+    fill_in "Disciplina", with: @trabalho.disciplina
     click_on "Create Trabalho"
 
     assert_text "Trabalho was successfully created"
@@ -27,9 +27,9 @@ class TrabalhosTest < ApplicationSystemTestCase
     visit trabalhos_url
     click_on "Edit", match: :first
 
-    fill_in "Disciplina", with: @trabalho.Disciplina
-    fill_in "Dataentrega", with: @trabalho.dataEntrega
+    fill_in "Data de entrega", with: @trabalho.data_de_entrega
     fill_in "Descricao", with: @trabalho.descricao
+    fill_in "Disciplina", with: @trabalho.disciplina
     click_on "Update Trabalho"
 
     assert_text "Trabalho was successfully updated"

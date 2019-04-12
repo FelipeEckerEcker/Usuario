@@ -5,16 +5,8 @@
 <table>
   <thead>
     <tr>
-<<<<<<< HEAD
-      <th>Notaaluno</th>
-      <th>Presencaaula</th>
-      <th>Notatrabalho</th>
-      <th>Notaprovalivro</th>
-      <th>Atividadesextra</th>
-=======
       <th>Curso</th>
       <th>Nome</th>
->>>>>>> 61b637a031b1e2c77fe2e9d5250aeb60b9b5427d
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,16 +14,8 @@
   <tbody>
     <% @disciplinas.each do |disciplina| %>
       <tr>
-<<<<<<< HEAD
-        <td><%= disciplina.notaAluno %></td>
-        <td><%= disciplina.presencaAula %></td>
-        <td><%= disciplina.notaTrabalho %></td>
-        <td><%= disciplina.notaProvaLivro %></td>
-        <td><%= disciplina.atividadesExtra %></td>
-=======
         <td><%= disciplina.Curso %></td>
         <td><%= disciplina.Nome %></td>
->>>>>>> 61b637a031b1e2c77fe2e9d5250aeb60b9b5427d
         <td><%= link_to 'Show', disciplina %></td>
         <td><%= link_to 'Edit', edit_disciplina_path(disciplina) %></td>
         <td><%= link_to 'Destroy', disciplina, method: :delete, data: { confirm: 'Are you sure?' } %></td>
