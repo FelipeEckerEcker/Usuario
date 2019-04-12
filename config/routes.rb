@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nota_alunos
   resources :matriculas
   resources :disciplinas
   resources :cursos
