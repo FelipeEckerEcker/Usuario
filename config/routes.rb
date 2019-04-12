@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :presenca_aulas
+  resources :provas
+  resources :trabalhos
   resources :nota_alunos
   resources :matriculas
   resources :disciplinas

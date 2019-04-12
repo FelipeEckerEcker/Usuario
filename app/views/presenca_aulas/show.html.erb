@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @presenca_aula.nome %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @presenca_aula.data %>
+</p>
+
+<p>
+  <strong>Numero faltas:</strong>
+  <%= @presenca_aula.numero_faltas %>
+</p>
+
+<%= link_to 'Edit', edit_presenca_aula_path(@presenca_aula) %> |
+<%= link_to 'Back', presenca_aulas_path %>

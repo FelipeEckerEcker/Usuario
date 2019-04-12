@@ -14,10 +14,10 @@ class AulasTest < ApplicationSystemTestCase
     visit aulas_url
     click_on "New Aula"
 
-    fill_in "Data", with: @aula.data
-    fill_in "Disciplina", with: @aula.disciplina
-    fill_in "Objetivorealizado", with: @aula.objetivoRealizado
-    fill_in "Trabalho", with: @aula.trabalho
+    fill_in "Data", with: @aula.Data
+    fill_in "Disciplina", with: @aula.Disciplina
+    fill_in "Objetivo", with: @aula.Objetivo
+    fill_in "Realizado", with: @aula.Realizado
     click_on "Create Aula"
 
     assert_text "Aula was successfully created"
@@ -28,10 +28,10 @@ class AulasTest < ApplicationSystemTestCase
     visit aulas_url
     click_on "Edit", match: :first
 
-    fill_in "Data", with: @aula.data
-    fill_in "Disciplina", with: @aula.disciplina
-    fill_in "Objetivorealizado", with: @aula.objetivoRealizado
-    fill_in "Trabalho", with: @aula.trabalho
+    fill_in "Data", with: @aula.Data
+    fill_in "Disciplina", with: @aula.Disciplina
+    fill_in "Objetivo", with: @aula.Objetivo
+    fill_in "Realizado", with: @aula.Realizado
     click_on "Update Aula"
 
     assert_text "Aula was successfully updated"

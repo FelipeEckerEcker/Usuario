@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2019_04_12_012354) do
+ActiveRecord::Schema.define(version: 2019_04_12_010656) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,18 +31,16 @@ ActiveRecord::Schema.define(version: 2019_04_12_012354) do
   end
 
   create_table "aulas", force: :cascade do |t|
-    t.string "disciplina"
-    t.date "data"
-    t.string "objetivoRealizado"
-    t.string "trabalho"
+    t.string "Disciplina"
+    t.date "Data"
+    t.string "Objetivo"
+    t.string "Realizado"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "cursos", force: :cascade do |t|
-    t.string "nome"
-    t.string "disciplina"
-    t.string "matricula"
+    t.string "Nome"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -76,6 +77,14 @@ ActiveRecord::Schema.define(version: 2019_04_12_012354) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "presenca_aulas", force: :cascade do |t|
+    t.string "nome"
+    t.date "data"
+    t.integer "numero_faltas"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "professores", force: :cascade do |t|
     t.string "nome"
     t.string "email"
@@ -86,14 +95,11 @@ ActiveRecord::Schema.define(version: 2019_04_12_012354) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "nome"
-    t.string "email"
-    t.text "endereco"
-    t.string "pai"
-    t.string "mae"
-    t.string "documento"
-    t.integer "telefone"
+  create_table "provas", force: :cascade do |t|
+    t.string "disciplina"
+    t.integer "nota_aluno"
+    t.string "curso"
+    t.date "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

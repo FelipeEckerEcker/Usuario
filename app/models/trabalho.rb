@@ -1,0 +1,2 @@
+class Trabalho < ApplicationRecord
+end

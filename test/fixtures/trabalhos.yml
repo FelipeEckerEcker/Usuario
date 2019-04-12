@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Disciplina: MyString
+  dataEntrega: 2019-04-11
+  descricao: MyText
+
+two:
+  Disciplina: MyString
+  dataEntrega: 2019-04-11
+  descricao: MyText
