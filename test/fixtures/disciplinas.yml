@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   notaAluno: 1
   presencaAula: MyString
   notaTrabalho: 1
@@ -13,3 +14,11 @@ two:
   notaTrabalho: 1
   notaProvaLivro: 1
   atividadesExtra: MyString
+=======
+  Curso: MyString
+  Nome: MyString
+
+two:
+  Curso: MyString
+  Nome: MyString
+>>>>>>> 61b637a031b1e2c77fe2e9d5250aeb60b9b5427d
