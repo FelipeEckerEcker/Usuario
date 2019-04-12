@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ra:</strong>
+  <%= @matricula.ra %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @matricula.nome %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @matricula.curso %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @matricula.disciplina %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @matricula.endereco %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @matricula.cpf %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @matricula.data %>
+</p>
+
+<%= link_to 'Edit', edit_matricula_path(@matricula) %> |
+<%= link_to 'Back', matriculas_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ra: 1
+  nome: MyString
+  curso: MyString
+  disciplina: MyString
+  endereco: MyString
+  cpf: MyString
+  data: 2019-04-11
+
+two:
+  ra: 1
+  nome: MyString
+  curso: MyString
+  disciplina: MyString
+  endereco: MyString
+  cpf: MyString
+  data: 2019-04-11

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Matriculas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ra</th>
+      <th>Nome</th>
+      <th>Curso</th>
+      <th>Disciplina</th>
+      <th>Endereco</th>
+      <th>Cpf</th>
+      <th>Data</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @matriculas.each do |matricula| %>
+      <tr>
+        <td><%= matricula.ra %></td>
+        <td><%= matricula.nome %></td>
+        <td><%= matricula.curso %></td>
+        <td><%= matricula.disciplina %></td>
+        <td><%= matricula.endereco %></td>
+        <td><%= matricula.cpf %></td>
+        <td><%= matricula.data %></td>
+        <td><%= link_to 'Show', matricula %></td>
+        <td><%= link_to 'Edit', edit_matricula_path(matricula) %></td>
+        <td><%= link_to 'Destroy', matricula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Matricula', new_matricula_path %>
