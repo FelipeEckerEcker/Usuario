@@ -69,6 +69,6 @@ class AulasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def aula_params
-      params.require(:aula).permit(:Disciplina, :Data, :Objetivo, :Realizado)
+      params.require(:aula).permit(:disciplina, :data, :objetivo, :realizado)
     end
 end

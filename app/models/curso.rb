@@ -1,3 +1,3 @@
 class Curso < ApplicationRecord
-    validates :nome, :disciplinas, presence: true
+    validates :nome presence: true
 end

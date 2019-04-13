@@ -16,10 +16,10 @@
   <tbody>
     <% @aulas.each do |aula| %>
       <tr>
-        <td><%= aula.Disciplina %></td>
-        <td><%= aula.Data %></td>
-        <td><%= aula.Objetivo %></td>
-        <td><%= aula.Realizado %></td>
+        <td><%= aula.disciplina %></td>
+        <td><%= aula.data %></td>
+        <td><%= aula.objetivo %></td>
+        <td><%= aula.realizado %></td>
         <td><%= link_to 'Show', aula %></td>
         <td><%= link_to 'Edit', edit_aula_path(aula) %></td>
         <td><%= link_to 'Destroy', aula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
