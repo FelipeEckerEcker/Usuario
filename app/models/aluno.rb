@@ -1,4 +1,5 @@
 class Aluno < ApplicationRecord
 
-    validates :nome, :documento, :telefone, :email, :pai, :mae, :endereco presence:true
+    validates :nome, :documento, :telefone, :email, :pai, :mae, :endereco, presence: true
+
 end
