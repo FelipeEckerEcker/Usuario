@@ -1,7 +1,5 @@
 class Curso < ApplicationRecord
-    belongs_to :alunos
-    
-    has_many :disciplinas
+    belongs_to :disciplinas
 
-    validates :nome, presence: true
+    validates :nome, presence:true
 end
