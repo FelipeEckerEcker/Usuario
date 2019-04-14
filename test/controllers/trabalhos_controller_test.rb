@@ -17,7 +17,7 @@ class TrabalhosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create trabalho" do
     assert_difference('Trabalho.count') do
-      post trabalhos_url, params: { trabalho: { data_de_entrega: @trabalho.data_de_entrega, descricao: @trabalho.descricao, disciplina: @trabalho.disciplina } }
+      post trabalhos_url, params: { trabalho: { curso: @trabalho.curso, data_de_entrega: @trabalho.data_de_entrega, descricao: @trabalho.descricao, disciplina: @trabalho.disciplina, nome: @trabalho.nome } }
     end
 
     assert_redirected_to trabalho_url(Trabalho.last)
@@ -34,7 +34,7 @@ class TrabalhosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update trabalho" do
-    patch trabalho_url(@trabalho), params: { trabalho: { data_de_entrega: @trabalho.data_de_entrega, descricao: @trabalho.descricao, disciplina: @trabalho.disciplina } }
+    patch trabalho_url(@trabalho), params: { trabalho: { curso: @trabalho.curso, data_de_entrega: @trabalho.data_de_entrega, descricao: @trabalho.descricao, disciplina: @trabalho.disciplina, nome: @trabalho.nome } }
     assert_redirected_to trabalho_url(@trabalho)
   end
 

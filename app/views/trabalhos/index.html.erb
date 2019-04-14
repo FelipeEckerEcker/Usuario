@@ -5,7 +5,9 @@
 <table>
   <thead>
     <tr>
+      <th>Nome</th>
       <th>Disciplina</th>
+      <th>Curso</th>
       <th>Data de entrega</th>
       <th>Descricao</th>
       <th colspan="3"></th>
@@ -15,7 +17,9 @@
   <tbody>
     <% @trabalhos.each do |trabalho| %>
       <tr>
+        <td><%= trabalho.nome %></td>
         <td><%= trabalho.disciplina %></td>
+        <td><%= trabalho.curso %></td>
         <td><%= trabalho.data_de_entrega %></td>
         <td><%= trabalho.descricao %></td>
         <td><%= link_to 'Show', trabalho %></td>

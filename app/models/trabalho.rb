@@ -1,4 +1,4 @@
 class Trabalho < ApplicationRecord
 
-    validates :disciplina, :data_de_entrega, :descricao presence:true
+    validates :nome, :disciplina, :curso, :data_de_entrega, :descricao, presence:true
 end
