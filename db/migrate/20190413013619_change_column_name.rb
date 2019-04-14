@@ -3,4 +3,3 @@ class ChangeColumnName < ActiveRecord::Migration[5.2]
     rename_column :cursos, :Nome, :nome
   end
 end
-rails g migration ChangeColumnName
