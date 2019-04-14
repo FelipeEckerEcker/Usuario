@@ -2,26 +2,14 @@
 
 one:
   nome: MyString
-<<<<<<< HEAD
-  telefone: MyString
+  documento: MyString
   email: MyString
+  telefone: 1
   endereco: MyString
 
 two:
   nome: MyString
-  telefone: MyString
+  documento: MyString
   email: MyString
+  telefone: 1
   endereco: MyString
-=======
-  email: MyString
-  endereco: MyText
-  telefone: 1
-  documento: MyString
-
-two:
-  nome: MyString
-  email: MyString
-  endereco: MyText
-  telefone: 1
-  documento: MyString
->>>>>>> d99b35d016db3527669868ae5897ce7e3a71e111

@@ -6,13 +6,10 @@
   <thead>
     <tr>
       <th>Nome</th>
-      <th>Telefone</th>
-      <th>Email</th>
-      <th>Endereco</th>
-      <th>Email</th>
-      <th>Endereco</th>
-      <th>Telefone</th>
       <th>Documento</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Endereco</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,10 +18,10 @@
     <% @professores.each do |professor| %>
       <tr>
         <td><%= professor.nome %></td>
-        <td><%= professor.email %></td>
-        <td><%= professor.endereco %></td>
-        <td><%= professor.telefone %></td>
         <td><%= professor.documento %></td>
+        <td><%= professor.email %></td>
+        <td><%= professor.telefone %></td>
+        <td><%= professor.endereco %></td>
         <td><%= link_to 'Show', professor %></td>
         <td><%= link_to 'Edit', edit_professor_path(professor) %></td>
         <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
