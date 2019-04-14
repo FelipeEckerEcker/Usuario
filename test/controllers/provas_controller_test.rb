@@ -17,7 +17,7 @@ class ProvasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create prova" do
     assert_difference('Prova.count') do
-      post provas_url, params: { prova: { curso: @prova.curso, data: @prova.data, disciplina: @prova.disciplina, nota_aluno: @prova.nota_aluno } }
+      post provas_url, params: { prova: { curso: @prova.curso, data: @prova.data, disciplina: @prova.disciplina, nome: @prova.nome, nota_aluno: @prova.nota_aluno } }
     end
 
     assert_redirected_to prova_url(Prova.last)
@@ -34,7 +34,7 @@ class ProvasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update prova" do
-    patch prova_url(@prova), params: { prova: { curso: @prova.curso, data: @prova.data, disciplina: @prova.disciplina, nota_aluno: @prova.nota_aluno } }
+    patch prova_url(@prova), params: { prova: { curso: @prova.curso, data: @prova.data, disciplina: @prova.disciplina, nome: @prova.nome, nota_aluno: @prova.nota_aluno } }
     assert_redirected_to prova_url(@prova)
   end
 

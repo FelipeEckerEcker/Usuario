@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :provas
   resources :nota_alunos
   resources :disciplinas
   resources :professores
@@ -7,7 +8,6 @@ Rails.application.routes.draw do
   resources :notas_trabalhos
   resources :trabalhos
   resources :presenca_aulas
-  resources :provas
   resources :matriculas
   resources :cursos
   resources :aulas

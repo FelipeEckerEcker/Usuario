@@ -17,6 +17,7 @@ class ProvasTest < ApplicationSystemTestCase
     fill_in "Curso", with: @prova.curso
     fill_in "Data", with: @prova.data
     fill_in "Disciplina", with: @prova.disciplina
+    fill_in "Nome", with: @prova.nome
     fill_in "Nota aluno", with: @prova.nota_aluno
     click_on "Create Prova"
 
@@ -31,6 +32,7 @@ class ProvasTest < ApplicationSystemTestCase
     fill_in "Curso", with: @prova.curso
     fill_in "Data", with: @prova.data
     fill_in "Disciplina", with: @prova.disciplina
+    fill_in "Nome", with: @prova.nome
     fill_in "Nota aluno", with: @prova.nota_aluno
     click_on "Update Prova"
 

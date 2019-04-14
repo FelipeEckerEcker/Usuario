@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Nome</th>
       <th>Disciplina</th>
       <th>Nota aluno</th>
       <th>Curso</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @provas.each do |prova| %>
       <tr>
+        <td><%= prova.nome %></td>
         <td><%= prova.disciplina %></td>
         <td><%= prova.nota_aluno %></td>
         <td><%= prova.curso %></td>

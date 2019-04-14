@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_14_161021) do
+ActiveRecord::Schema.define(version: 2019_04_14_163134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -121,6 +121,7 @@ ActiveRecord::Schema.define(version: 2019_04_14_161021) do
   end
 
   create_table "provas", force: :cascade do |t|
+    t.string "nome"
     t.string "disciplina"
     t.integer "nota_aluno"
     t.string "curso"
