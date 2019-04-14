@@ -17,11 +17,7 @@ class DisciplinasControllerTest < ActionDispatch::IntegrationTest
 
   test "should create disciplina" do
     assert_difference('Disciplina.count') do
-<<<<<<< HEAD
-      post disciplinas_url, params: { disciplina: { atividadesExtra: @disciplina.atividadesExtra, notaAluno: @disciplina.notaAluno, notaProvaLivro: @disciplina.notaProvaLivro, notaTrabalho: @disciplina.notaTrabalho, presencaAula: @disciplina.presencaAula } }
-=======
-      post disciplinas_url, params: { disciplina: { Curso: @disciplina.Curso, Nome: @disciplina.Nome } }
->>>>>>> 61b637a031b1e2c77fe2e9d5250aeb60b9b5427d
+      post disciplinas_url, params: { disciplina: { curso: @disciplina.curso, nome: @disciplina.nome } }
     end
 
     assert_redirected_to disciplina_url(Disciplina.last)
@@ -38,11 +34,7 @@ class DisciplinasControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update disciplina" do
-<<<<<<< HEAD
-    patch disciplina_url(@disciplina), params: { disciplina: { atividadesExtra: @disciplina.atividadesExtra, notaAluno: @disciplina.notaAluno, notaProvaLivro: @disciplina.notaProvaLivro, notaTrabalho: @disciplina.notaTrabalho, presencaAula: @disciplina.presencaAula } }
-=======
-    patch disciplina_url(@disciplina), params: { disciplina: { Curso: @disciplina.Curso, Nome: @disciplina.Nome } }
->>>>>>> 61b637a031b1e2c77fe2e9d5250aeb60b9b5427d
+    patch disciplina_url(@disciplina), params: { disciplina: { curso: @disciplina.curso, nome: @disciplina.nome } }
     assert_redirected_to disciplina_url(@disciplina)
   end
 
