@@ -5,5 +5,6 @@ class Disciplina < ApplicationRecord
     validates :nome, :curso, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

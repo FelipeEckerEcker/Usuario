@@ -41,6 +41,12 @@
     <%= form.date_select :data_prova %>
   </div>
 
+  <div class="field">
+    <%= form.label :professores_id %>
+    <%= form.select(:professores_id, 
+                    Professor.all.collect {|p| [p.nome, p.id]}) %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

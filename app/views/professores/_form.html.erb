@@ -36,6 +36,30 @@
     <%= form.text_field :endereco %>
   </div>
 
+  <div class="field">
+    <%= form.label :provas_id %>
+    <%= form.select(:provas_id, 
+                    Prova.all.collect {|p| [p.nome, p.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :trabalhos_id %>
+<%= form.select(:trabalhos_id, 
+                Trabalho.all.collect {|t| [t.nome, t.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :alunos_id %>
+<%= form.select(:alunos_id, 
+                Aluno.all.collect {|a| [a.nome, a.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :aulas_id %>
+<%= form.select(:aulas_id, 
+                Aula.all.collect {|a| [a.nome, a.id]}) %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

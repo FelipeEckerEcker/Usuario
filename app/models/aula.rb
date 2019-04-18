@@ -7,5 +7,6 @@ class Aula < ApplicationRecord
     validates :disciplina, :data, :objetivo, :realizado, presence:true
 
     scope :por_disciplina, lambda { |disciplina = nil|
-    where(disciplina: disciplina) if disciplina
+        where(disciplina: disciplina) if disciplina
+    }
 end

@@ -7,5 +7,6 @@ class NotaProvaLivro < ApplicationRecord
     validates :nome, :data, :curso, :nota_aluno, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

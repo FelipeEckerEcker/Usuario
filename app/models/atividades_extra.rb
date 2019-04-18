@@ -7,5 +7,6 @@ class AtividadesExtra < ApplicationRecord
     validates :nome, :data, :data_entrega, :curso, :disciplina, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

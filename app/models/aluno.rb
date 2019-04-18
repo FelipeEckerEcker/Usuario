@@ -12,5 +12,6 @@ class Aluno < ApplicationRecord
     validates :nome, :documento, :telefone, :email, :pai, :mae, :endereco, presence: true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

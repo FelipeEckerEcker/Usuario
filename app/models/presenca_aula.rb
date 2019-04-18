@@ -7,5 +7,6 @@ class PresencaAula < ApplicationRecord
     validates :nome, :data, :numero_faltas, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

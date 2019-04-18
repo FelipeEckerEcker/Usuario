@@ -7,5 +7,6 @@ class Trabalho < ApplicationRecord
     validates :nome, :disciplina, :curso, :data_de_entrega, :descricao, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

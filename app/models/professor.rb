@@ -11,5 +11,6 @@ class Professor < ApplicationRecord
     validates :nome, :documento, :email, :telefone, :endereco, presence:true
 
     scope :por_nome, lambda { |nome = nil|
-    where(nome: nome) if nome
+        where(nome: nome) if nome
+    }
 end

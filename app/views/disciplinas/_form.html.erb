@@ -21,6 +21,18 @@
     <%= form.text_field :curso %>
   </div>
 
+  <div class="field">
+    <%= form.label :professores_id %>
+    <%= form.select(:professores_id, 
+                    Professor.all.collect {|p| [p.nome, p.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :cursos_id %>
+<%= form.select(:cursos_id, 
+                Curso.all.collect {|c| [c.nome, c.id]}) %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

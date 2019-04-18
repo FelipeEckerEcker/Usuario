@@ -31,6 +31,18 @@
     <%= form.number_field :nota_aluno %>
   </div>
 
+  <div class="field">
+    <%= form.label :professores_id %>
+    <%= form.select(:professores_id, 
+                    Professor.all.collect {|p| [p.nome, p.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :alunos_id %>
+<%= form.select(:alunos_id, 
+                Aluno.all.collect {|a| [a.nome, a.id]}) %>
+</div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
