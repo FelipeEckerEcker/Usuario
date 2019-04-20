@@ -1,8 +1,7 @@
 class NotaAluno < ApplicationRecord
     belongs_to :professor, optional: true
-    belongs_to :nota_g1, optional:true
-    belongs_to :nota_g2, optional:true 
-    belongs_to :nota_prova_livro, optional;true 
+    belongs_to :nota_prova_livro, optional;true
+ 
 
 
     has_many :aluno, class_name: "Aluno"
