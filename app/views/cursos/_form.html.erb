@@ -19,7 +19,7 @@
   <div class="field">
     <%= form.label :disciplinas_id %>
     <%= form.select(:disciplinas_id, 
-                    Disciplinas.all.collect {|d| [d.nome, d.id]}) %>
+                    Disciplina.all.collect {|d| [d.nome, d.id]}) %>
 </div>
 
   <div class="actions">

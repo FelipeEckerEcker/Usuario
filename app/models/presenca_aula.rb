@@ -1,8 +1,8 @@
 class PresencaAula < ApplicationRecord
-    belongs_to :professor
+    belongs_to :professor, optional: true
 
-    has_many :alunos, class_name: "Aluno"
-    has_many :presenca_aulas, class_name: "Presenca aula"
+    has_many :aluno, class_name: "Aluno"
+    has_many :presenca_aula, class_name: "Presenca aula"
 
     validates :nome, :data, :numero_faltas, presence:true
 

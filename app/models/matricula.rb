@@ -1,5 +1,5 @@
 class Matricula < ApplicationRecord
-    belongs_to :alunos
+    belongs_to :aluno, optional: true
 
     validates :ra, :nome, :curso, :disciplina, :endereco, :cpf, :data, :semestre, presence:true
 

@@ -40,7 +40,7 @@
     <%= form.label :documento %>
     <%= form.text_field :documento %>
   </div>
-
+  
   <div class="field">
     <%= form.label :telefone %>
     <%= form.number_field :telefone %>
@@ -68,6 +68,18 @@
 <%= form.label :cursos_id %>
 <%= form.select(:cursos_id, 
                 Curso.all.collect {|c| [c.nome, c.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :professores_id %>
+<%= form.select(:professores_id, 
+                Professor.all.collect {|pr| [pr.nome, pr.id]}) %>
+</div>
+
+<div class="field">
+<%= form.label :matriculas_id %>
+<%= form.select(:matriculas_id, 
+                Matricula.all.collect {|m| [m.ra, m.id]}) %>
 </div>
 
   <div class="actions">

@@ -1,8 +1,8 @@
 class Trabalho < ApplicationRecord
-    belongs_to :alunos
-    belongs_to :professores
+    belongs_to :aluno, optional: true
+    belongs_to :professor, optional: true
 
-    has_many :notas_trabalhos, class_name:"Nota trabalho"
+    has_many :notas_trabalho, class_name:"Nota trabalho"
 
     validates :nome, :disciplina, :curso, :data_de_entrega, :descricao, presence:true
 

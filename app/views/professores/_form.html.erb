@@ -57,8 +57,15 @@
 <div class="field">
 <%= form.label :aulas_id %>
 <%= form.select(:aulas_id, 
-                Aula.all.collect {|a| [a.nome, a.id]}) %>
+                Aula.all.collect {|au| [au.disciplina, au.id]}) %>
 </div>
+
+<div class="field">
+<%= form.label :atividades_extras_id %>
+<%= form.select(:atividades_extras_id, 
+                AtividadesExtra.all.collect {|ae| [ae.nome, ae.id]}) %>
+</div>
+
 
   <div class="actions">
     <%= form.submit %>

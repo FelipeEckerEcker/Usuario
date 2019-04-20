@@ -1,6 +1,6 @@
 class NotaProvaLivro < ApplicationRecord
-    belongs_to :professores
-    belongs_to :alunos
+    belongs_to :professor, optional: true
+    belongs_to :aluno, optional: true
 
     has_many :nota_alunos, class_name: "Nota aluno"
 

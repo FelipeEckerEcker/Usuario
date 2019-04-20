@@ -1,6 +1,8 @@
 class Disciplina < ApplicationRecord
-    belongs_to :professores
-    belongs_to :cursos
+    belongs_to :professor, optional: true
+    belongs_to :curso, optional: true
+
+    has_many :aluno, class_name: "Aluno"
 
     validates :nome, :curso, presence:true
 
