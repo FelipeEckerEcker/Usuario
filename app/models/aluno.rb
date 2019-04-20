@@ -11,7 +11,7 @@ class Aluno < ApplicationRecord
     has_many :presenca_aula, class_name: "Presenca aula"
 
     validates :nome, :documento, :telefone, :email, :pai, :mae, :endereco, presence: true
-    validates :email, uniqueness: true
+    validates :email, uniqueness: true 
 
     scope :por_nome, lambda { |nome = nil|
         where(nome: nome) if nome

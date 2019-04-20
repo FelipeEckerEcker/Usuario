@@ -9,3 +9,4 @@ class NotaAluno < ApplicationRecord
     where(nome_do_aluno: nome_do_aluno) if nome_do_aluno
 }
 end
+ 

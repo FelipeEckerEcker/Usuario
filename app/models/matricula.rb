@@ -7,3 +7,4 @@ class Matricula < ApplicationRecord
     where(ra: ra) if ra
 }
 end
+ 

@@ -10,3 +10,4 @@ class Aula < ApplicationRecord
         where(disciplina: disciplina) if disciplina
     }
 end
+ 
