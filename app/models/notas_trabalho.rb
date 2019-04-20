@@ -1,5 +1,6 @@
 class NotasTrabalho < ApplicationRecord
     belongs_to :professor, optional: true
+    belongs_to :trabalho, optional: true
     
     has_many :aluno, class_name: "Aluno"
 
